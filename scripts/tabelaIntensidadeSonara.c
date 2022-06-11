@@ -47,7 +47,7 @@ int main(void) {
     if (fp == NULL)
         return 0;
 
-    fprintf(fp,"\\begin{table}[ht]\n");
+    fprintf(fp,"\\begin{table}\n");
     fprintf(fp,"\\begin{tabular}{|c|c|c|}\n");
 
     fprintf(fp,"\\hline\n");
