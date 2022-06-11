@@ -15,13 +15,9 @@
 \usepackage{color}				
 \usepackage{graphicx}		
 \usepackage{microtype} 		
-\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[brazilian]{backref}
 \usepackage[alf]{abntex2cite}
-
-\titulo{Bel, Decibel e sua importância\\ para o estudo do som}
-\autor{pedro Oliveira Sousa}
-\local{Brasil}
-\data{2022}
+\usepackage{makecell}
 
 \definecolor{blue}{RGB}{41,5,195}
 
@@ -39,24 +35,24 @@
 		urlcolor=blue,
 		bookmarksdepth=4
 }
-\makeatother
 
+\makeatother
 \makeindex
 
 \setlrmarginsandblock{3cm}{3cm}{*}
 \setulmarginsandblock{3cm}{3cm}{*}
 \checkandfixthelayout
-
 \setlength{\parindent}{1.3cm}
-
 \setlength{\parskip}{0.2cm}
 
 \SingleSpacing
-
-\begin{document}
-
 \frenchspacing 
 
+\begin{document}
+\selectlanguage{brazil}
+\titulo{Bel, Decibel e sua importância para o estudo do som}
+\tituloestrangeiro{Bel, Decibel and its importance for the study of sound}
+\autor{Pedro Oliveira Sousa}
 \maketitle
 
 \begin{resumoumacoluna}
@@ -96,14 +92,16 @@ You've probably heard about decibels (dB). This measure of sound intensity is us
 
 \section{Introdução}
 
+O decibel (dB) é uma unidade usada para medir a intensidade do som e outras grandezas físicas. Um decibel é um décimo de um bel (B), uma unidade com o nome de Graham Bell, o inventor do telefone. Sua escala logarítmica é adequada para representar o espectro auditivo do ser humano.
+
+\section{Discussão}
+
 \subsection{Intensidade}
 Os sons apresentam três características – intensidade, altura e timbre. Intensidade, timbre e altura são características, ou propriedades dos sons. A intensidade sonora refere-se à potência da fonte emissora, bem como à quantidade de energia que o som é capaz de transportar; o timbre diz respeito ao formato das oscilações sonoras e a altura, por sua vez, é determinada pela frequência do som.
 
 Quando algum som tem grande intensidade, dizemos que esse som é forte, ao contrário, trata-se de um som fraco. É esta propriedade do som que nos permite distinguir uma fonte sonora de outra, apesar de estarem a produzir sons com a mesma frequência e intensidade. Projeto Educação: veja questão resolvida sobre cálculo de intensidade sonora
 
 A intensidade das ondas sonoras é proporcional à amplitude da onda sonora, e não à sua frequência, por isso dizemos que sons de grande intensidade são sons fortes, enquanto sons de baixa intensidade são chamados de sons fracos. Sons de grande intensidade são capazes de transferir grandes quantidades de energia a cada segundo, podendo causar danos à audição, por exemplo.\cite{HELERBROCKIntensidadeSomBrasilEscola}
-
-\section{Discussão}
 
 A intensidade sonora mede a quantidade de energia que uma onda sonora é capaz de transferir a cada segundo em uma área de 1 m². A intensidade relaciona-se à amplitude da onda e é definida pela potência emitida pela fonte dividida pela área da frente de onda sonora, como mostramos a seguir:
 
@@ -119,7 +117,7 @@ A - Área da frente de onda (m²)
 
 A figura a seguir ilustra a frente de onda sonora, que tem formato circular, uma vez que as sonoras são tridimensionais e propagam-se com a mesma velocidade em todas as direções:
 \begin{figure}[h]
-    \includegraphics[width=0.80\textwidth]{intensidade-do-som-e-distancia-2.jpg}
+    \includegraphics[width=0.80\textwidth]{./imagens/intensidade-do-som-e-distancia-2.jpg}
     \centering
     \caption{A intensidade sonora diminui com o quadrado da distância entre a fonte e o observador.}
     \label{fig:Intencidade sonora}
@@ -152,7 +150,7 @@ Quando algum som tem grande intensidade, dizemos que esse som é forte, ao contr
 \subsection{Timbre}
 
 \begin{figure}[h]
-    \includegraphics[width=0.80\textwidth]{timbre.jpg}
+    \includegraphics[width=0.80\textwidth]{./imagens/timbre.jpg}
     \centering
     \caption{O timbre permite distinguirmos diferentes fontes sonoras graças ao formato da onda.}
     \label{fig:Timbre}
@@ -165,7 +163,7 @@ O timbre também garante que a voz humana seja diferente em cada indivíduo, per
 \subsection{Altura}
 
 \begin{figure}[h]
-    \includegraphics[width=0.80\textwidth]{caracateristicas-dos-sons.jpg}
+    \includegraphics[width=0.80\textwidth]{./imagens/caracateristicas-dos-sons.jpg}
     \centering
     \caption{Os sons apresentam três características – intensidade, altura e timbre.}
     \label{fig:CaracteriasticaDoSom}
@@ -197,6 +195,10 @@ A frequência do som pode ser obtida por meio da velocidade de propagação e do
 Os seres humanos não são capazes de ouvir qualquer frequência sonora, na verdade, a nossa percepção é bastante limitada: só somos capazes de ouvir frequências que se encontrem em intervalo que vai de 20 Hz a 20.000 Hz, esse intervalo é conhecido como espectro audível.
 
 Qualquer som que tenha frequência abaixo dos 20 Hz é inaudível pelos seres humanos e é chamado de infrassom, já os sons que tenham frequência maior que 20.000 Hz, também inaudíveis para nós, são conhecidos como ultrassons. Quer saber mais sobre o assunto? Acesse o nosso texto sobre infrassons e ultrassons.
+
+Confira a tabela mostrada a seguir, que relaciona a intensidade sonora com os possíveis efeitos negativos à saúde humana. Os dados exibidos estão de acordo com as diretrizes da Organização Mundial da Saúde (OMS):
+
+\input{./tabela}
 
 \section{Considerações Finais}
 
